@@ -13,7 +13,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Hosted-Checkout-Payment-Pages/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Hosted-Checkout-Payment-Pages?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Hosted-Checkout-Payment-Pages/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Hosted-Checkout-Payment-Pages?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Hosted-Checkout-Payment-Pages/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Hosted-Checkout-Payment-Pages?style=social" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Hosted-Checkout-Payment-Pages/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2077?label=Follow" /></a>
@@ -73,7 +73,7 @@ The global payment gateway and checkout infrastructure market is estimated at **
 
 ## 🛠️ Open-Source GitHub Projects
 
-| 📦 Project | 🌟 Star Badge | 📝 Description |
+| 📦 Project | 🌟 Stars_Badge | 📝 Description |
 |---|---|---|
 | **[Hyperswitch](https://github.com/juspay/hyperswitch)** | [![Stars](https://img.shields.io/github/stars/juspay/hyperswitch?style=social&color=white)](https://github.com/juspay/hyperswitch/stargazers) | **Open-source, high-performance financial switch & hosted payment orchestration.** Written in Rust, it provides a universal PCI-compliant checkout layer and unified payment page that connects to dozens of payment processors, smart card routing, and automated reconciliation. |
 | **[BTCPay Server](https://github.com/btcpayserver/btcpayserver)** | [![Stars](https://img.shields.io/github/stars/btcpayserver/btcpayserver?style=social&color=white)](https://github.com/btcpayserver/btcpayserver/stargazers) | **Free, self-hosted, open-source cryptocurrency payment processor & checkout system.** Provides pre-built hosted invoice and checkout pages for Bitcoin (on-chain and Lightning Network) with zero fees, no third-party custody, and direct wallet settlements. |
@@ -94,7 +94,7 @@ We love community contributions! To add a new platform or update existing detail
 2. 🌿 **Create a branch** for your feature or fix (`git checkout -b feature/add-new-checkout-tool`).
 3. ✏️ **Edit** `README.md` following the exact table structure:
    - For **SaaS**: Name, official link, valuation/market cap, starting price, exact free tier / trial limits, and description.
-   - For **Open-Source**: Name, GitHub repo link, social star badge linking to `/stargazers`, and descriptive overview.
+   - For **Open-Source**: Name, GitHub repo link, social Stars_Badge linking to `/stargazers`, and descriptive overview.
 4. 🚀 **Submit a Pull Request (PR)** with a concise summary of why the tool is relevant.
 
 ---
