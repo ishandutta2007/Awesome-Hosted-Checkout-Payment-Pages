@@ -1,6 +1,6 @@
 # Awesome-Hosted-Checkout-Payment-Pages
 
-# Top Hosted Checkout & Payment Pages Ecosystem
+## Top Hosted Checkout & Payment Pages Ecosystem
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
 *Focused on PCI-Compliant Payment Pages, Merchant of Record Models & Self-Hosted Checkout Infrastructure*  
