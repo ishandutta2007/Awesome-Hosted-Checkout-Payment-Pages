@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2937" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="50%" stop-color="#a78bfa" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <linearGradient id="glowPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="glowCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#374151" stroke-width="0.75" stroke-opacity="0.35" />
+      <circle cx="40" cy="0" r="1.5" fill="#4b5563" fill-opacity="0.6" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseOrb {
+      0% { transform: scale(1) translate(0px, 0px); opacity: 0.45; }
+      50% { transform: scale(1.15) translate(15px, -10px); opacity: 0.75; }
+      100% { transform: scale(1) translate(0px, 0px); opacity: 0.45; }
+    }
+    @keyframes floatCard1 {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes floatCard2 {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(12px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes streamData {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes shimmerPill {
+      0% { opacity: 0.8; }
+      50% { opacity: 1; filter: drop-shadow(0 0 8px #60a5fa); }
+      100% { opacity: 0.8; }
+    }
+    .orb-1 { animation: pulseOrb 7s ease-in-out infinite; }
+    .orb-2 { animation: pulseOrb 9s ease-in-out infinite reverse; }
+    .float-1 { animation: floatCard1 5s ease-in-out infinite; }
+    .float-2 { animation: floatCard2 6s ease-in-out infinite; }
+    .data-flow {
+      stroke-dasharray: 8 6;
+      animation: streamData 3s linear infinite;
+    }
+    .pill-glow { animation: shimmerPill 4s ease-in-out infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="420" rx="16" fill="url(#gridPattern)" />
+
+  <!-- Animated Glowing Ambient Lights (Dynamic Background Elements) -->
+  <circle class="orb-1" cx="200" cy="120" r="180" fill="url(#glowCyan)" filter="url(#glow)" />
+  <circle class="orb-2" cx="1020" cy="300" r="220" fill="url(#glowPurple)" filter="url(#glow)" />
+  <circle class="orb-1" cx="880" cy="90" r="140" fill="url(#glowCyan)" filter="url(#glow)" />
+
+  <!-- Abstract Payment Cards / Flows (Dynamic Decorative Floating Elements) -->
+  <g class="float-1" opacity="0.65">
+    <rect x="70" y="270" width="180" height="100" rx="12" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.5" />
+    <circle cx="105" cy="300" r="14" fill="#3b82f6" fill-opacity="0.4" />
+    <circle cx="125" cy="300" r="14" fill="#ef4444" fill-opacity="0.4" />
+    <rect x="100" y="330" width="90" height="8" rx="4" fill="#64748b" />
+    <rect x="100" y="345" width="40" height="6" rx="3" fill="#475569" />
+  </g>
+
+  <g class="float-2" opacity="0.7">
+    <rect x="940" y="60" width="190" height="110" rx="14" fill="url(#cardGrad)" stroke="#8b5cf6" stroke-width="1.5" />
+    <rect x="965" y="85" width="40" height="26" rx="5" fill="#f59e0b" fill-opacity="0.6" />
+    <rect x="965" y="125" width="120" height="8" rx="4" fill="#94a3b8" />
+    <rect x="965" y="142" width="70" height="6" rx="3" fill="#64748b" />
+    <circle cx="1100" cy="98" r="8" fill="#10b981" />
+  </g>
+
+  <!-- Flow / Stream Connection Lines -->
+  <path class="data-flow" d="M 250 320 C 400 320, 450 360, 600 360 C 750 360, 800 320, 940 320" fill="none" stroke="#60a5fa" stroke-width="2" opacity="0.4" />
+  <path class="data-flow" d="M 260 100 C 420 100, 480 50, 600 50 C 720 50, 780 110, 940 110" fill="none" stroke="#a78bfa" stroke-width="2" opacity="0.35" />
+
+  <!-- Center Decorative Frame for Foreground Focus -->
+  <rect x="150" y="70" width="900" height="280" rx="20" fill="#0f172a" fill-opacity="0.75" stroke="#1e293b" stroke-width="2" />
+
+  <!-- Badge Pill on Top -->
+  <g class="pill-glow" transform="translate(470, 95)">
+    <rect width="260" height="32" rx="16" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.2" />
+    <circle cx="20" cy="16" r="5" fill="#22c55e" />
+    <text x="35" y="21" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1">CURATED DEVELOPER DIRECTORY</text>
+  </g>
+
+  <!-- Foreground Title and Subtitle (Crisp, High Contrast, Centered) -->
+  <!-- Main Title -->
+  <text x="600" y="175" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="url(#titleGrad)" letter-spacing="-0.5">
+    Hosted Checkout &amp; Payment Pages
+  </text>
+
+  <!-- Subtitle Line 1 -->
+  <text x="600" y="218" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#e2e8f0">
+    Top SaaS Solutions, Merchant-of-Record Providers &amp; Open-Source Payment Infrastructure
+  </text>
+
+  <!-- Subtitle Line 2 / Tagline -->
+  <text x="600" y="248" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#94a3b8">
+    PCI DSS Compliance • Frictionless One-Click Checkouts • Direct Gateway Orchestration
+  </text>
+
+  <!-- Feature Pills / Highlights at Bottom of Center Frame -->
+  <g transform="translate(240, 280)">
+    <!-- Pill 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="130" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="65" y="21" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">⚡ Stripe &amp; PayPal</text>
+    </g>
+    <!-- Pill 2 -->
+    <g transform="translate(145, 0)">
+      <rect width="145" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="72" y="21" text-anchor="middle" fill="#a78bfa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🛡️ Self-Hosted Rust/Go</text>
+    </g>
+    <!-- Pill 3 -->
+    <g transform="translate(305, 0)">
+      <rect width="135" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="67" y="21" text-anchor="middle" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">💳 Zero Commission</text>
+    </g>
+    <!-- Pill 4 -->
+    <g transform="translate(455, 0)">
+      <rect width="145" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="72" y="21" text-anchor="middle" fill="#f472b6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🌐 Global Currencies</text>
+    </g>
+    <!-- Pill 5 -->
+    <g transform="translate(615, 0)">
+      <rect width="105" height="34" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1" />
+      <text x="52" y="21" text-anchor="middle" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🔒 PCI-DSS</text>
+    </g>
+  </g>
+</svg>
